@@ -9,10 +9,10 @@ public class hw1
 	public static void main(String[] args) {
 
 		System.out.println("Введите число N, и я вычислю его треугольное число и факториал:");
-		    int n = enterFunction();
+		    int n = enterNumer();
 		    while (n < 0){
 		        System.out.printf ("Число не должно быть отрицательным! Повторите ввод: \n");
-		        n = enterFunction();
+		        n = enterNumer();
 		    }
 		    System.out.printf ("Треугольное число для %d равно %d \n", n, treangle(n));
 		    System.out.printf ("Факториал числа %d равен %d", n, factorial(n));
@@ -34,7 +34,7 @@ public class hw1
         return sum;
     }
     
-    static int enterFunction () {
+    static int enterNumer () {
         Scanner enterNum = new Scanner(System.in);
         boolean flag = enterNum.hasNextInt();
 		if (flag == true) {
